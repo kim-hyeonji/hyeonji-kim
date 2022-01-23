@@ -24,6 +24,13 @@ a {
 
 }
 
+div.menuIconContainer {
+    display: none;
+    height: 18px;
+    width: 18px;
+    position: relative;
+}
+
 .navbar__menu li {
     padding: 3px 10px;
 }
@@ -76,6 +83,10 @@ a {
     }
 
     .navbar__toggleBtn {
+        display: block;
+    }
+
+    div.menuIconContainer {
         display: block;
     }
 
