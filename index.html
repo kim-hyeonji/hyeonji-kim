@@ -1,85 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Hyeonji Kim</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hyeonji Kim — Product Designer</title>
     <link rel="stylesheet" href="main.css" />
   </head>
-
   <body>
-    <div>
-      <div id="navbar">
-        <div id="name">Hyeonji Kim</div>
-        <div id="nav-itemContainer">
-          <div class="nav-item">Works</div>
-          <div class="nav-item">About</div>
-        </div>
-      </div>
+    <nav>
+      <a href="index.html" class="logo">Hyeonji Kim</a>
+      <ul>
+        <li><a href="index.html" class="active">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="resume.pdf" target="_blank">Resume ↗</a></li>
+      </ul>
+    </nav>
 
-      <div id="hero">
-        <div id="heading">
-          <h1>
-            Hi there! I’m Hyeonji, a Product Designer, Strategist, and Problem
-            Solver
-          </h1>
-        </div>
-        <div id="description">
+    <section id="hero">
+      <h1>Hyeonji Kim</h1>
+      <p class="tagline">
+        Product Designer at DeepL — focused on self-serve growth, SaaS product
+        experience, and cross-functional ownership.
+      </p>
+    </section>
+
+    <section id="work">
+      <div class="case-studies">
+        <a href="#" class="case-card">
+          <span class="tag">Lead case study</span>
+          <h2>Self-serve journey</h2>
           <p>
-            I’m a designer who delivers a user-centric experience by offering
-            pixel-perfect results with meticulous attention to detail. I strive
-            to create user experiences that are both intuitive and visually
-            appealing. Currently, I'm working at DeepL in a product team with a
-            mission to break down the communication barrier.
+            Pricing model repackaging and pricing page revamp that improved
+            checkout conversion from 3.36% → 5.21% — a 55% relative lift.
           </p>
-        </div>
-        <div id="icons">
-          <div>email</div>
-          <div>linkedin</div>
-        </div>
+          <span class="meta">DeepL · 2025–2026</span>
+        </a>
+
+        <a href="#" class="case-card">
+          <h2>Logged-in experience</h2>
+          <p>
+            Led the new home dashboard and owned the Pro experience redesign for
+            DeepL's Teams segment. Named in the DeepL blog.
+          </p>
+          <span class="meta">DeepL · 2024</span>
+        </a>
+
+        <a href="#" class="case-card">
+          <h2>CycleWise</h2>
+          <p>
+            Research-driven period tracker concept for menopausal transition —
+            50-person survey, 6-app competitive analysis, qualitative
+            interviews.
+          </p>
+          <span class="meta">Master's Thesis · 2022–2023</span>
+        </a>
+
+        <a href="#" class="case-card">
+          <h2>HanaHaus — SAP</h2>
+          <p>
+            Redesign of a co-working space reservation and admin web app. User
+            interviews, participatory design, and design system contributions.
+          </p>
+          <span class="meta">SAP · Working Student</span>
+        </a>
       </div>
+    </section>
 
-      <div id="works">
-        <div>
-          <div>image</div>
-          <div>Project title</div>
-          <div>Description</div>
-          <div>Badges</div>
-        </div>
-
-        <div>
-          <div>image</div>
-          <div>Project title</div>
-          <div>Description</div>
-          <div>Badges</div>
-        </div>
-
-        <div>
-          <div>image</div>
-          <div>Project title</div>
-          <div>Description</div>
-          <div>Badges</div>
-        </div>
-
-        <div>
-          <div>image</div>
-          <div>Project title</div>
-          <div>Description</div>
-          <div>Badges</div>
-        </div>
-      </div>
-
-      <div id="footer">
-        <div>Sitemap</div>
-
-        <div>Contact</div>
-
-        <div>© Hyeonji Kim 2024</div>
-      </div>
-    </div>
+    <footer>
+      <p>© 2026 Hyeonji Kim</p>
+    </footer>
   </body>
 </html>

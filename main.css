@@ -1,40 +1,196 @@
-body {
-  background-color: #f9f9f9; /* Light background color for the whole page */
-  color: #333; /* Default dark text color */
-  font-family: "Inter", sans-serif;
-  margin: 0; /* Removes default body margin */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
   padding: 0;
 }
 
-#navbar {
-  font-family: "Inter", sans-serif;
-  display: flex; /* Aligns items in a row */
-  justify-content: space-between; /* Spaces items out evenly */
-  align-items: center; /* Centers items vertically */
-  padding: 15px 30px; /* Adds padding around the nav bar */
-  font-family: "Inter", sans-serif; /* Uses 'Inter' font */
+/* root */
+:root {
+  /* Colors */
+  --bg: #ffffff;
+  --text: #111111;
+  --muted: #666666;
+  --accent: #111111;
+  --border: #e8e8e8;
+
+  /* Layout */
+  --page-padding: 24px;
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-s: 1rem;
+  --space-m: 1.5rem;
+  --space-l: 2rem;
+  --space-xl: 4rem;
 }
 
-/* Styling for the name section */
-#name {
-  font-size: 1.1em; /* Makes the name slightly bigger */
-  font-weight: 500; /* Sets font weight to semibold */
-  color: #333; /* Dark color for name */
+html {
+  scroll-behavior: smooth;
 }
 
-#nav-itemContainer {
-  display: flex; /* Aligns nav items in a row */
-  gap: 10px; /* Space between the nav items */
+body {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
 }
 
-/* Styling for the navigation items */
-.nav-item {
-  margin: 0 15px; /* Space between items */
-  font-size: 1.1em; /* Slightly larger font size */
-  cursor: pointer;
+/* ── Nav ── */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem var(--page-padding);
 }
 
-/* Hover effect to make items italic */
-.nav-item:hover {
-  font-style: italic;
+.logo {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--text);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+nav a:hover,
+nav a.active {
+  color: var(--text);
+}
+
+/* ── Sections ── */
+section {
+  padding: var(--space-xl) var(--page-padding);
+}
+
+/* ── Hero ── */
+#hero {
+  padding-top: 6rem;
+  padding-bottom: 5rem;
+}
+#hero h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.tagline {
+  color: var(--muted);
+  max-width: 55ch;
+  font-size: 1.05rem;
+}
+
+/* ── Case studies ── */
+.case-studies {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  border-top: 1px solid var(--border);
+}
+
+.case-card {
+  display: block;
+  padding: 2.25rem 0;
+  border-bottom: 1px solid var(--border);
+  text-decoration: none;
+  color: var(--text);
+  transition: padding-left 0.2s ease;
+}
+
+.case-card:hover {
+  padding-left: 0.5rem;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.case-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+.case-card p {
+  color: var(--muted);
+  max-width: 60ch;
+  margin-bottom: 0.75rem;
+}
+.meta {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* ── About / Contact prose ── */
+#about h1,
+#contact h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.prose {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 55ch;
+}
+.prose p {
+  color: var(--muted);
+}
+.prose a {
+  color: var(--text);
+}
+
+/* ── Footer ── */
+footer {
+  padding: var(--space-l) var(--page-padding);
+  font-size: 0.85rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+
+/* ── Mobile ── */
+@media (max-width: 767px) {
+  :root {
+    --page-padding: 20px;
+  }
+
+  nav {
+    align-items: flex-start;
+    gap: var(--space-s);
+  }
+
+  nav ul {
+    gap: var(--space-s);
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+
+  #hero {
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-xl);
+  }
+
+  #hero h1,
+  #about h1,
+  #contact h1 {
+    font-size: 1.75rem;
+  }
+
+  .case-card {
+    padding: var(--space-l) 0;
+  }
 }
