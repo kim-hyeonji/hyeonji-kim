@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About — Hyeonji Kim</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,300;6..72,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="logo">HYEONJI KIM</a>
+      <ul>
+        <li><a href="index.html" class="active">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main class="case-layout">
+      <aside class="case-nav">
+        <a href="index.html">← Back</a>
+        <a href="#overview">Overview</a>
+        <a href="#problem">Problem</a>
+        <a href="#approach">Approach</a>
+        <a href="#solution">Solution</a>
+        <a href="#reflection">Reflection</a>
+      </aside>
+
+      <article class="case-content">
+        <!-- ── OVERVIEW ── -->
+        <section id="overview" class="case-section">
+          <p class="eyebrow">
+            Master's Thesis · University of Applied Sciences Potsdam · 2022–2023
+          </p>
+          <h1>CycleWise</h1>
+          <p class="tagline">
+            A research-driven concept for a period tracker that supports users
+            through every life stage — including the one no existing app was
+            designed for.
+          </p>
+        </section>
+
+        <div class="case-thumb hero-thumb">
+          <img
+            src="images/case-studies/cyclewise/cyclewise-0.jpg"
+            alt="CycleWise"
+          />
+        </div>
+
+        <section class="case-overview">
+          <div class="overview-item">
+            <p class="eyebrow">Role</p>
+            <p>Product Designer<br />Researcher</p>
+          </div>
+
+          <div class="overview-item">
+            <p class="eyebrow">Timeline</p>
+            <p>Aug 2022 → Feb 2023</p>
+          </div>
+          <div class="overview-item">
+            <p class="eyebrow">Methods</p>
+            <p>
+              Survey (n=50)<br />
+              Competitive analysis<br />
+              Empathy mapping<br />
+              Qualitative interviews<br />
+              Prototyping & usability testing
+            </p>
+          </div>
+        </section>
+
+        <hr
+          style="
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 20px 0;
+          "
+        />
+
+        <section class="impact-overview">
+          <p class="eyebrow">At a glance</p>
+          <div class="impact-grid">
+            <div class="impact-card">
+              <h3>0 of 6 apps</h3>
+              <p>
+                None of the top period trackers on the App Store fully supported
+                menopausal transition
+              </p>
+            </div>
+            <div class="impact-card">
+              <h3>50 survey responses</h3>
+              <p>
+                Tri-lingual survey (EN / DE / KR) with perimenopause and
+                postmenopause respondents
+              </p>
+            </div>
+            <div class="impact-card">
+              <h3>6 user tests</h3>
+              <p>
+                Including end-users, a FemTech industry stakeholder, and two
+                OB/GYN physicians
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ── PROBLEM ── -->
+        <section id="problem" class="case-section">
+          <p class="eyebrow">Problem</p>
+          <h2>Period trackers were designed for one phase of life.</h2>
+
+          <p>
+            The transition to menopause is a significant stage — characterized
+            by irregular periods and symptoms like hot flashes, night sweats,
+            and sleep disruption. Despite the prevalence of period tracking apps
+            in the mobile health industry, none were built to support this
+            transition.
+          </p>
+
+          <div class="callout">
+            <p>
+              Existing period trackers do not provide adequate support for
+              tracking and managing the symptoms and changes that occur during
+              menopausal transition — leaving many menstruators without the
+              tools they need to navigate this important life stage.
+            </p>
+          </div>
+
+          <p>The research question guiding this thesis:</p>
+
+          <p class="serif-accent">
+            How can the current period tracker's user experience be improved so
+            that it can also support the menopausal transition phase?
+          </p>
+
+          <div class="case-thumb hero-thumb">
+            <img
+              src="images/case-studies/cyclewise/cyclewise-1.png"
+              alt="CycleWise"
+            />
+          </div>
+        </section>
+
+        <!-- ── APPROACH ── -->
+        <section id="approach" class="case-section">
+          <p class="eyebrow">Approach</p>
+          <h2>Understanding a gap the market had ignored.</h2>
+
+          <p>
+            I used the double diamond framework throughout — diverging to
+            understand the problem space deeply before converging on a design
+            direction.
+          </p>
+
+          <h3>Competitive analysis</h3>
+          <p>
+            I analyzed six top-ranked period trackers from the iOS App Store
+            Health & Fitness category, examining whether they supported users'
+            full lifetime goals and life stages.
+          </p>
+
+          <div class="callout">
+            <p>None of the six apps fully supported menopausal transition.</p>
+          </div>
+
+          <div class="case-thumb hero-thumb">
+            <img
+              src="images/case-studies/cyclewise/cyclewise-2.png"
+              alt="CycleWise"
+            />
+          </div>
+
+          <h3>Survey</h3>
+          <p>
+            I surveyed 50 people in perimenopause or postmenopause through a
+            tri-lingual questionnaire (English, German, Korean). Two major
+            discoveries emerged.
+          </p>
+
+          <div class="finding-list">
+            <div class="finding-item">
+              <div class="finding-dot"></div>
+              <p>
+                <strong style="color: var(--text)"
+                  >Absence of education.</strong
+                >
+                75% said 'No' when asked if they'd learned about menopause
+                formally. Half had only read about it online — where accuracy is
+                unreliable.
+              </p>
+            </div>
+            <div class="finding-item">
+              <div class="finding-dot"></div>
+              <p>
+                <strong style="color: var(--text)"
+                  >Need for safe spaces to talk.</strong
+                >
+                Over 80% said they discussed menopause with family or friends —
+                but felt there was no dedicated space to do so, especially
+                online.
+              </p>
+            </div>
+          </div>
+
+          <div class="case-thumb hero-thumb">
+            <img
+              src="images/case-studies/cyclewise/cyclewise-3.png"
+              alt="CycleWise"
+            />
+          </div>
+
+          <h3>Empathy mapping</h3>
+          <p>
+            I organized survey responses into an empathy map to bridge the gap
+            between what users say and what they actually feel. Key themes:
+            being unprepared, wanting accurate information in advance, and
+            feeling anxious about symptoms they couldn't explain.
+          </p>
+
+          <div class="case-thumb hero-thumb">
+            <img
+              src="images/case-studies/cyclewise/cyclewise-4.png"
+              alt="CycleWise"
+            />
+          </div>
+
+          <h3>How might we</h3>
+          <p>
+            I translated user pain points into design opportunities using "How
+            might we" questions — then identified the most feasible solutions
+            for a mobile app context.
+          </p>
+
+          <div class="hmw-list">
+            <div class="hmw-item">
+              <span class="hmw-q"
+                >How might we make users feel prepared for menopause?</span
+              >
+              <span class="hmw-a"
+                >→ User notifications and a dedicated Menopause Mode</span
+              >
+            </div>
+            <div class="hmw-item">
+              <span class="hmw-q"
+                >How might we bring users accurate information about
+                menopause?</span
+              >
+              <span class="hmw-a"
+                >→ Live call with medical specialists, smart reminders, and
+                informative articles</span
+              >
+            </div>
+            <div class="hmw-item">
+              <span class="hmw-q"
+                >How might we make users feel comfortable with sudden symptoms
+                and irregular periods?</span
+              >
+              <span class="hmw-a"
+                >→ Customizable dashboard and data visualization</span
+              >
+            </div>
+            <div class="hmw-item">
+              <span class="hmw-q"
+                >How might we make users feel comfortable communicating about
+                menopause?</span
+              >
+              <span class="hmw-a">→ Anonymous community forum</span>
+            </div>
+          </div>
+
+          <h3>Prototyping and iteration</h3>
+          <p>
+            I built from sketches to low-fidelity prototypes, running two rounds
+            of qualitative interviews — first with two end-users and one FemTech
+            industry stakeholder, then with one additional FemTech stakeholder
+            and two OB/GYN physicians. Each round lasted ~45 minutes, conducted
+            remotely.
+          </p>
+
+          <div class="image-grid-2">
+            <div class="case-thumb" style="margin-bottom: 0">
+              <img
+                src="images/case-studies/cyclewise/cyclewise-6.png"
+                alt="CycleWise"
+              />
+            </div>
+            <div class="case-thumb" style="margin-bottom: 0">
+              <img
+                src="images/case-studies/cyclewise/cyclewise-5.png"
+                alt="CycleWise"
+              />
+            </div>
+          </div>
+
+          <h3>Three design iterations came from the interview findings:</h3>
+
+          <div class="finding-list">
+            <div class="finding-item">
+              <div class="finding-dot"></div>
+              <p>
+                <strong style="color: var(--text)"
+                  >Iteration 1 — Personalization visibility.</strong
+                >
+                Made each dashboard widget visually editable and made the mode
+                selector more prominent with contextual information.
+              </p>
+            </div>
+
+            <div class="case-thumb" style="margin-bottom: 0">
+              <img
+                src="images/case-studies/cyclewise/cyclewise-7.png"
+                alt="CycleWise"
+              />
+            </div>
+            <br />
+            <div class="finding-item">
+              <div class="finding-dot"></div>
+              <p>
+                <strong style="color: var(--text)"
+                  >Iteration 2 — Data tracking subtlety.</strong
+                >
+                Added severity scales, customizable tracking parameters, and a
+                pause period option to generate more accurate visualizations.
+              </p>
+            </div>
+
+            <div class="case-thumb" style="margin-bottom: 0">
+              <img
+                src="images/case-studies/cyclewise/cyclewise-8.png"
+                alt="CycleWise"
+              />
+            </div>
+            <br />
+            <div class="finding-item">
+              <div class="finding-dot"></div>
+              <p>
+                <strong style="color: var(--text)"
+                  >Iteration 3 — Visual clarity.</strong
+                >
+                Replaced heavy text blocks with icons, illustrations, and
+                graphical elements to reduce cognitive load.
+              </p>
+            </div>
+          </div>
+
+          <div class="case-thumb" style="margin-bottom: 0">
+            <img
+              src="images/case-studies/cyclewise/cyclewise-9.png"
+              alt="CycleWise"
+            />
+          </div>
+        </section>
+
+        <!-- ── SOLUTION ── -->
+        <section id="solution" class="case-section">
+          <p class="eyebrow">Solution</p>
+          <h2>A period tracker that grows with you.</h2>
+
+          <p>
+            CycleWise is a customizable period tracker that adapts to a user's
+            life stage and goals — from puberty through menopause. The solution
+            centers on three design concepts.
+          </p>
+
+          <div class="case-thumb" style="margin-bottom: 0">
+            <img
+              src="images/case-studies/cyclewise/cyclewise-10.png"
+              alt="CycleWise"
+            />
+          </div>
+
+          <div class="feature-list">
+            <div class="feature-item">
+              <h3>1. Integrate Menopause Mode</h3>
+              <p>
+                The app recognizes that menopause is a natural life transition —
+                not a disease. By adding a Menopause Mode alongside Puberty,
+                Track Period, Trying to Conceive, and Pregnancy, the app treats
+                the full lifecycle of a menstruator as equally worthy of
+                support. The mode selector is prominent on the home screen and
+                adapts the entire experience to the user's current stage.
+              </p>
+              <div class="case-thumb">
+                <img
+                  src="images/case-studies/cyclewise/cyclewise-11.png"
+                  alt="CycleWise"
+                />
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <h3>2. Give users autonomy through customization</h3>
+              <p>
+                Giving users authority over their own health data increases
+                engagement and insight. CycleWise allows users to customize
+                their dashboard widgets, choose which symptoms and triggers to
+                track, and edit their tracking parameters freely. The
+                customizable dashboard adapts to what matters most to each
+                individual — not a one-size default.
+              </p>
+
+              <div class="case-thumb" style="margin-bottom: 0">
+                <img
+                  src="images/case-studies/cyclewise/cyclewise-12.png"
+                  alt="CycleWise"
+                />
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <h3>3. Make the best use of data visualization</h3>
+              <p>
+                Self-tracked data is only useful if it tells a story. The
+                Insight tab synthesizes patterns from a user's data — cycle
+                length trends, symptom correlations, noticeable changes over
+                time — displayed through clear, readable charts. This gives
+                users meaningful feedback on their own bodies, and can support
+                conversations with their physicians.
+              </p>
+              <div class="case-thumb" style="margin-bottom: 0">
+                <img
+                  src="images/case-studies/cyclewise/cyclewise-13.png"
+                  alt="CycleWise"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ── REFLECTION ── -->
+        <section id="reflection" class="case-section">
+          <p class="eyebrow">Reflection</p>
+          <h2>Validated by users, physicians, and the research gap itself.</h2>
+
+          <ul>
+            <li>
+              CycleWise is a research concept, not a shipped product. The impact
+              is measured through research rigor and user validation — not
+              analytics.
+            </li>
+            <li>
+              All 6 prototype test participants found the experience easy to
+              navigate, intuitive, and much cleaner than existing apps
+            </li>
+            <li>
+              The symptom matrix chart in the Insight tab was noted as useful
+              not just for users, but for physicians making diagnoses
+            </li>
+
+            <li>
+              Participants responded positively to the language used — "the new
+              chapter of life" was specifically called out as framing menopause
+              positively rather than clinically
+            </li>
+
+            <li>
+              The Forum concept was noted as genuinely helpful — the topic
+              filtering was particularly well-received
+            </li>
+          </ul>
+
+          <hr
+            style="border: none; border-top: 1px solid #dcdfe4; margin: 20px 0"
+          />
+
+          <h3>What I learned</h3>
+
+          <p>
+            <b>1. Human-centered research works across unfamiliar domains:</b> I
+            chose menopause because I found a genuine research gap — not because
+            it was familiar to me. Through surveys, interviews, and academic
+            literature, I was able to deeply understand a user group I had no
+            personal experience with.
+          </p>
+
+          <p>
+            <b>2. Continuous testing is essential:</b> Testing from the earliest
+            prototype stage let me iterate meaningfully rather than refine in
+            the wrong direction. Even with limited access to the exact target
+            users, remote testing revealed critical improvements at every round.
+          </p>
+
+          <p>
+            <b>3. Academic research builds design confidence:</b> Reading
+            scientific literature and synthesizing it into design decisions gave
+            me a stronger foundation for every choice. It's a skill I've carried
+            into my product work — understanding the problem before reaching for
+            a solution.
+          </p>
+
+          <p style="font-size: 0.9rem; color: var(--muted)">
+            Full thesis available at
+            <a
+              href="https://fhp.incom.org/action/open-file/669871"
+              target="_blank"
+              style="color: var(--text)"
+              >fhp.incom.org</a
+            >
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <p>Designed + Coded by Hyeonji</p>
+
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/hyeonji-kim/" target="_blank">
+          LinkedIn
+        </a>
+
+        <a href="mailto:iam.hyeonjikim@gmail.com">Email</a>
+
+        <a href="https://github.com/kim-hyeonji" target="_blank"> GitHub </a>
+      </div>
+    </footer>
+  </body>
+</html>

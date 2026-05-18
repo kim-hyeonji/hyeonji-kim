@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About — Hyeonji Kim</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,300;6..72,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="logo">HYEONJI KIM</a>
+      <ul>
+        <li><a href="index.html" class="active">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main class="case-layout">
+      <aside class="case-nav">
+        <a href="index.html">← Back</a>
+        <a href="#overview">Overview</a>
+        <a href="#problem">Problem</a>
+        <a href="#approach">Approach</a>
+        <a href="#solution">Solution</a>
+        <a href="#outcome">Outcome</a>
+      </aside>
+
+      <article class="case-content">
+        <section id="overview" class="case-section">
+          <p class="eyebrow">DeepL · 2025–2026</p>
+          <h1>Rethinking pricing page for B2B self-serve</h1>
+          <p class="tagline">
+            Redesigning a high-traffic pricing experience to support clearer
+            plan decisions, stronger B2B intent, and scalable monetization.
+          </p>
+        </section>
+
+        <div class="case-thumb hero-thumb">
+          <img
+            src="images/thumbnails/self-serve-thumbnail.png"
+            alt="Pricing to Self-Serve Journey"
+          />
+        </div>
+
+        <section class="case-overview">
+          <div class="overview-item">
+            <p class="eyebrow">Role</p>
+            <p>Product Designer</p>
+          </div>
+
+          <div class="overview-item">
+            <p class="eyebrow">Timeline</p>
+            <p>
+              Q4 2025 → Q1 2026<br />
+              (full rollout March 2026)
+            </p>
+          </div>
+
+          <div class="overview-item">
+            <p class="eyebrow">Team</p>
+            <p>
+              1 Product Designer (me)<br />
+              1 Product Manager<br />
+              1 Engineering Manager<br />
+              4 Engineers<br />
+              1 Content Designer<br />
+              1 Pricing Stategy Manager<br />
+              1 Product Marketing Manager
+            </p>
+          </div>
+        </section>
+
+        <hr
+          style="border: none; border-top: 1px solid #dcdfe4; margin: 20px 0"
+        />
+
+        <section class="impact-overview">
+          <p class="eyebrow">Impact Overview</p>
+
+          <div class="impact-grid">
+            <div class="impact-card">
+              <h3>Purchase trend shift</h3>
+              <p>Increased uptake of higher tiers post-launch</p>
+            </div>
+
+            <div class="impact-card">
+              <h3>Fewer cancellations</h3>
+              <p>Stronger plan-fit among new sign-ups</p>
+            </div>
+
+            <div class="impact-card">
+              <h3>Design system adoption rate increased</h3>
+              <p>
+                Deprecated system replaced — one page structure per breakpoint
+                instead of two
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="problem" class="case-section">
+          <p class="eyebrow">Problem</p>
+          <h2>
+            The pricing page hadn't been meaningfully redesigned in a long time.
+            Over time, three layers of problems had accumulated.
+          </h2>
+
+          <h3>Business</h3>
+          <p>
+            The page was effectively built to convert free users to paid — but
+            it wasn't clearly targeting B2B audiences. Plans lacked clear value
+            propositions tied to team size and pricing scale, making it
+            difficult for business buyers to self-qualify. The result was missed
+            revenue opportunities, particularly at higher tiers where the
+            business impact is greatest.
+          </p>
+
+          <h3>UX</h3>
+          <p>
+            Users had to click a CTA or scroll past a large header just to see
+            the actual plans. Competing primary CTAs created confusion about
+            what to do next. And as DeepL's product offering expanded, the
+            navigation structure wasn't scalable enough to accommodate new
+            products cleanly.
+          </p>
+
+          <h3>Technical</h3>
+          <p>
+            The page was still built on a deprecated design system. Every update
+            required developers to maintain two separate pages per breakpoint,
+            making even small copy or pricing changes slow and costly to ship.
+          </p>
+
+          <p class="serif-accent">
+            A pricing page should function as a self-serve sales tool. This one
+            wasn't.
+          </p>
+
+          <div class="case-thumb hero-thumb">
+            <img
+              src="images/case-studies/self-serve/self-serve-1.png"
+              alt="Pricing to Self-Serve Journey"
+            />
+          </div>
+
+          <h3>How we got here</h3>
+          <p>
+            The initiative came from a mutual recognition between the pricing &
+            packaging team and our product team. The P&P team led the business
+            justification with data, and I led the design side from problem
+            framing through to production.
+          </p>
+          <p>
+            Before any design work began, I ran a problem alignment workshop
+            with the PM, EM, pricing strategist, and content designer. The goal
+            was a shared understanding of what we were actually solving —
+            business, UX, and technical — before anyone touched a canvas. The
+            participants agreed that the core problem is "Lack of clarity" in
+            terms of the information architecture, visual hierarchy, and
+            messaging.
+          </p>
+
+          <div class="case-thumb hero-thumb">
+            <img
+              src="images/case-studies/self-serve/self-serve-2.png"
+              alt="Pricing to Self-Serve Journey"
+            />
+          </div>
+        </section>
+
+        <section id="approach" class="case-section">
+          <p class="eyebrow">Approach</p>
+          <h2>Understanding where the page was failing</h2>
+
+          <h3>Discovery</h3>
+          <p>
+            I started by understanding where and why users were struggling,
+            before forming any design direction.
+          </p>
+          <ul>
+            <li>
+              <b>Support ticket analysis</b> — I analyzed Zendesk tickets
+              through Enterpret to surface recurring patterns in user confusion
+              around plans, pricing, and upgrades.
+            </li>
+            <li>
+              <b>Funnel data</b> — I reviewed the drop-off data across the
+              pricing-to-checkout funnel to understand where intent was being
+              lost.
+            </li>
+            <li>
+              <b>Competitive benchmarking</b> — I audited SaaS pricing pages
+              across the market to understand conventions, patterns, and where
+              DeepL was meaningfully different.
+            </li>
+          </ul>
+
+          <div class="case-thumb hero-thumb">
+            <img
+              src="images/case-studies/self-serve/self-serve-2-1.png"
+              alt="Pricing to Self-Serve Journey"
+            />
+          </div>
+
+          <h3>The hard constraints</h3>
+          <p>
+            Two constraints shaped every design decision and are worth naming
+            explicitly.
+          </p>
+          <p>
+            <b>Localization at scale.</b> DeepL supports 19 UI languages — and
+            string lengths vary significantly across them. A layout that worked
+            in English could break entirely in German or Russian. This meant the
+            solution had to be built on a reusable, flexible structure — not a
+            fixed layout designed for one language.
+          </p>
+          <p>
+            <b>Four paid tiers.</b> Most SaaS pricing pages are designed around
+            three tiers including Free. DeepL has four paid plans, which makes
+            the comparison hierarchy harder to communicate clearly and puts more
+            pressure on visual structure to do the work.
+          </p>
+
+          <div class="case-thumb hero-thumb">
+            <img
+              src="images/case-studies/self-serve/self-serve-3.png"
+              alt="Pricing to Self-Serve Journey"
+            />
+          </div>
+
+          <h3>Key decisions</h3>
+
+          <p>
+            <b>Removing Free from the pricing page.</b> There was genuine
+            internal debate: the page was already busy, and Free isn't a paid
+            product — so should it appear on a pricing page at all? Rather than
+            deciding by opinion, we ran an A/B test. The result showed no
+            significant impact on conversion either way. We removed it.
+          </p>
+          <p>
+            <b>Switch plan as a dialog, not a standalone page.</b> The existing
+            pattern was a standalone page for switching plans. I pushed back on
+            this — a dialog integrates more naturally across any surface, like a
+            growth flow in the product, not just the subscription page. This is
+            a minor change with significant downstream implications for how the
+            feature scales across the product.
+          </p>
+        </section>
+
+        <section id="solution" class="case-section">
+          <p class="eyebrow">Solution</p>
+          <h2>Designing a system that could scale</h2>
+          <p>
+            The revamped pricing page is clearer, more scalable, and built to
+            convert B2B buyers.
+          </p>
+
+          <h3>1. Immediate plan visibility</h3>
+          <p>
+            The oversized header is gone. Plans are visible the moment the page
+            loads — no scrolling, no clicking required.
+          </p>
+          <div class="case-thumb hero-thumb">
+            <img
+              src="images/case-studies/self-serve/self-serve-4.png"
+              alt="Pricing to Self-Serve Journey"
+            />
+          </div>
+
+          <h3>2. Scalable product navigation</h3>
+          <p>
+            The navigation structure now supports multiple products cleanly. A
+            new product's self-serve flow was added to the page post-launch —
+            the first time that was possible without a significant dev effort.
+          </p>
+          <div class="case-thumb hero-thumb">
+            <img
+              src="images/case-studies/self-serve/self-serve-5.png"
+              alt="Pricing to Self-Serve Journey"
+            />
+          </div>
+
+          <h3>3. Clearer billing period toggle</h3>
+          <p>
+            The previous toggle caused confusion about which period was
+            selected. Replacing it with a segmented button group makes the
+            active state immediately obvious.
+          </p>
+          <div class="case-thumb hero-thumb">
+            <img
+              src="images/case-studies/self-serve/self-serve-6.png"
+              alt="Pricing to Self-Serve Journey"
+            />
+          </div>
+
+          <h3>4. Built on the current design system</h3>
+          <p>
+            The rebuild eliminated the deprecated component debt and reduced the
+            developer maintenance burden — one page structure per breakpoint
+            instead of two.
+          </p>
+
+          <hr
+            style="border: none; border-top: 1px solid #dcdfe4; margin: 20px 0"
+          />
+
+          <h3>Extending the self-serve journey beyond pricing</h3>
+          <p>
+            As part of the broader self-serve workstream, I also designed two
+            add-on purchase flows that didn't exist before.
+          </p>
+
+          <ul>
+            <li>
+              <b>Write Pro add-on</b> — purchasable directly within the checkout
+              flow and on the pricing page
+            </li>
+            <li>
+              <b>Extra file translation add-on</b> — purchasable contextually,
+              either when a user hits their limit or from the subscription
+              management page.
+            </li>
+          </ul>
+          <div class="case-thumb hero-thumb">
+            <img
+              src="images/case-studies/self-serve/self-serve-7.png"
+              alt="Pricing to Self-Serve Journey"
+            />
+          </div>
+        </section>
+
+        <section id="outcome" class="case-section">
+          <p class="eyebrow">Outcome</p>
+          <h2>A clearer pricing experience with stronger self-serve signals</h2>
+
+          <p>
+            After full rollout in March 2026, the results validated the
+            strategic trade-off we made.
+          </p>
+
+          <p>
+            Sign-up volume declined slightly — an expected outcome as the page
+            became a better qualifier for B2B intent rather than a broad funnel
+            for any user. The signals that mattered more:
+          </p>
+
+          <h3>1. Plan mix shifted toward higher-value tiers</h3>
+          <p>
+            Team and Business plans saw stronger uptake relative to lower tier
+            like Individual
+          </p>
+
+          <h3>2. Subscription cancellations decreased</h3>
+          <p>Indicating stronger plan-fit among new sign-ups</p>
+
+          <h3>3. Design system fully adopted</h3>
+          <p>
+            Migrating away from the deprecated system means the pricing page is
+            now maintained like the rest of the product. One page structure per
+            breakpoint instead of two, making future pricing or copy updates
+            significantly faster to ship
+          </p>
+
+          <h3>4. Opened opportunities beyond the original scope</h3>
+          <p>
+            because the pricing page was built on reusable, scalable components,
+            another product team was able to add Voice to the pricing page
+            without needing design involvement to rebuild from scratch. The
+            switch plan pattern, redesigned as a dialog, also became reusable
+            across other surfaces in the product — work that extended beyond my
+            original scope
+          </p>
+
+          <div class="case-thumb hero-thumb">
+            <img
+              src="images/case-studies/self-serve/self-serve-8.png"
+              alt="Pricing to Self-Serve Journey"
+            />
+          </div>
+
+          <p>
+            The page is now doing its job as a self-serve sales tool, not just a
+            sign-up form — and the system behind it is built to grow.
+          </p>
+
+          <hr
+            style="border: none; border-top: 1px solid #dcdfe4; margin: 20px 0"
+          />
+
+          <h3>What I'd do differently</h3>
+          <p>
+            The logged-in pricing page experience remains unoptimized.
+            Authenticated users currently see the same CTAs as anonymous
+            visitors — which creates unnecessary friction for existing customers
+            looking to upgrade or change their plan. It wasn't in scope for this
+            project, but it's the clearest next step.
+          </p>
+
+          <hr
+            style="border: none; border-top: 1px solid #dcdfe4; margin: 20px 0"
+          />
+
+          <h3>Related work</h3>
+          <p>
+            This case study is one part of a broader self-serve journey I owned
+            across ~12 months:
+          </p>
+          <ul>
+            <li>
+              <b>Q3 2025</b> — Designed add-on purchase flows (Write Pro, Extra
+              file translation) flow
+            </li>
+            <li>
+              <b>Q4 2025 → Q1 2026</b> — Pricing page revamp (this case study)
+            </li>
+            <li>
+              <b>Q1 2026 onward</b> — API repackaging: redesigned the full
+              self-serve journey for a new API pricing model, including
+              checkout, upgrade, downgrade, and cancellation flows
+            </li>
+          </ul>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <p>Designed + Coded by Hyeonji</p>
+
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/hyeonji-kim/" target="_blank">
+          LinkedIn
+        </a>
+
+        <a href="mailto:iam.hyeonjikim@gmail.com">Email</a>
+
+        <a href="https://github.com/kim-hyeonji" target="_blank"> GitHub </a>
+      </div>
+    </footer>
+  </body>
+</html>

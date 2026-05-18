@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About — Hyeonji Kim</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,300;6..72,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="logo">HYEONJI KIM</a>
+      <ul>
+        <li><a href="index.html" class="active">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main class="case-layout">
+      <aside class="case-nav">
+        <a href="index.html">← Back</a>
+        <a href="#overview">Overview</a>
+        <a href="#problem">Problem</a>
+        <a href="#approach">Approach</a>
+        <a href="#solution">Solution</a>
+        <a href="#outcome">Outcome</a>
+      </aside>
+
+      <article class="case-content">
+        <!-- ── OVERVIEW ── -->
+        <section id="overview" class="case-section">
+          <p class="eyebrow">DeepL · 2024–2025</p>
+          <h1>Designing a 0→1 logged-in workspace for B2B users</h1>
+          <p class="tagline">
+            Before this project, logging into DeepL looked almost identical to
+            being logged out. We built the home experience — and a new
+            foundation — from scratch.
+          </p>
+        </section>
+
+        <div class="case-thumb hero-thumb">
+          <img
+            src="images/thumbnails/pro-home-thumbnail.png"
+            alt="Pro Home Experience"
+          />
+        </div>
+
+        <section class="case-overview">
+          <div class="overview-item">
+            <p class="eyebrow">Role</p>
+            <p>Product Designer</p>
+          </div>
+          <div class="overview-item">
+            <p class="eyebrow">Timeline</p>
+            <p>Q4 2024 → Q1 2025 (beta)<br />Full rollout Feb 2025</p>
+          </div>
+          <div class="overview-item">
+            <p class="eyebrow">Team</p>
+            <p>
+              1 Product Designer (me)<br />
+              1 Product Manager<br />
+              1 Engineering Manager<br />
+              4 Engineers<br />
+              1 Content Designer<br />
+            </p>
+          </div>
+        </section>
+
+        <hr
+          style="border: none; border-top: 1px solid #dcdfe4; margin: 20px 0"
+        />
+
+        <!-- Impact overview cards -->
+        <section class="impact-overview">
+          <p class="eyebrow">Impact Overview</p>
+          <div class="impact-grid">
+            <div class="impact-card">
+              <h3>83% beta preference</h3>
+              <p>
+                500+ enterprise users tested — 83% preferred the new experience
+                over the existing one
+              </p>
+            </div>
+            <div class="impact-card">
+              <h3>180+ companies rebranded</h3>
+              <p>
+                Custom logo activation from day one, validating a long-standing
+                latent need
+              </p>
+            </div>
+            <div class="impact-card">
+              <h3>A platform, not just a page</h3>
+              <p>
+                Admin customization and in-app announcements built on top —
+                without redesigning the foundation
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ── PROBLEM ── -->
+        <section id="problem" class="case-section">
+          <p class="eyebrow">Problem</p>
+          <h2>Logged in, but it didn't feel like it.</h2>
+
+          <p>
+            Logging into DeepL looked almost identical to being logged out. The
+            only visual difference was the replacement of the login button with
+            an avatar and fewer items on the horizontal navigation bar. For
+            individual users, a minor inconvenience. For enterprise customers,
+            translating confidential data — a real trust concern.
+          </p>
+
+          <div class="callout">
+            <p class="serif-accent">
+              "Am I actually logged in right now?" shouldn't cross a user's mind
+              mid-workflow. But it did.
+            </p>
+          </div>
+
+          <div class="case-thumb hero-thumb">
+            <img
+              src="images/case-studies/pro-home/pro-home-1.png"
+              alt="Pro Home Experience"
+            />
+          </div>
+
+          <p>
+            Beyond trust, DeepL had outgrown its navigation. Users now had
+            access to Translator, Write, Glossary, Saved Translations, and more
+            — but the navigation was built for a single-product experience.
+            Features were hard to find, and the workspace was cluttered with
+            marketing content that made sense before login but disrupted work
+            after it.
+          </p>
+
+          <p>
+            Admin users had it worst. Their primary job is managing subaccounts
+            — not translating. Yet they were shown the exact same interface as
+            individual end users.
+          </p>
+
+          <div class="callout">
+            <p class="serif-accent">
+              There was no home page, no vertical navigation, and no role-based
+              experience. Everything needed to be built from zero.
+            </p>
+          </div>
+        </section>
+
+        <!-- ── APPROACH ── -->
+        <section id="approach" class="case-section">
+          <p class="eyebrow">Approach</p>
+          <h2>Three user roles. One coherent experience.</h2>
+
+          <p>
+            The home experience had been discussed internally for over a year. A
+            design sprint had seeded the idea, but nothing shipped because the
+            idea got lost in missing ownership. When the project was finally
+            initiated, a senior product designer started the work — then left
+            the company mid-draft. I took over, inheriting early concepts, and
+            led the project through to launch.
+          </p>
+
+          <p>
+            Before any design decisions, I mapped out who we were actually
+            designing for. Three distinct user types emerged — each with
+            meaningfully different jobs to be done.
+          </p>
+
+          <div class="role-grid">
+            <div class="role-card">
+              <h3>User type 01: Admin users</h3>
+              <p>
+                Manage subaccounts, users, and permissions. Rarely translate.
+                Need a dashboard oriented around team management.
+              </p>
+            </div>
+            <div class="role-card">
+              <h3>User type 02: Team members</h3>
+              <p>
+                Translate and write. Need fast access to tools and the ability
+                to pick up where they left off.
+              </p>
+            </div>
+            <div class="role-card">
+              <h3>User type 03: Prosumers</h3>
+              <p>
+                Single-seat Pro subscribers. Need the security signal and
+                workspace clarity — without team management overhead.
+              </p>
+            </div>
+          </div>
+
+          <div class="case-thumb hero-thumb">
+            <img
+              src="images/case-studies/pro-home/pro-home-2.png"
+              alt="Pro Home Experience"
+            />
+          </div>
+
+          <h3>Research</h3>
+          <p>
+            We recruited enterprise customers with 20+ seats on Advanced or
+            Ultimate plans, running 6 prototype tests in September 2024 — 4 with
+            admin users, 2 with end users.
+          </p>
+
+          <ul>
+            <li>
+              All participants found the new experience easier to navigate, more
+              intuitive, and cleaner
+            </li>
+            <li>
+              Users found Saved Translations and Glossary more easily via the
+              vertical navigation
+            </li>
+            <li>
+              Most preferred the full-page Saved and Glossary experience over
+              the old modal approach
+            </li>
+          </ul>
+
+          <p>
+            <b>The main risk the research surfaced:</b> users landing on the
+            home dashboard had one extra click to reach the translator — a
+            friction point for long-time DeepL users with established habits.
+          </p>
+
+          <div class="case-thumb hero-thumb">
+            <img
+              src="images/case-studies/pro-home/pro-home-3.png"
+              alt="Pro Home Experience"
+            />
+          </div>
+
+          <h3>The hardest internal challenge</h3>
+          <p>
+            During dogfooding, we were challenged repeatedly:
+            <em
+              >why are we making users click once more to get to the
+              translator?</em
+            >
+          </p>
+
+          <div class="callout">
+            <p>
+              The home is not a blocker — it's a workspace. For users who only
+              want to translate, the translator is one click away. For users
+              managing a team or understanding their subscription, the home is
+              exactly where they should land.
+            </p>
+          </div>
+
+          <p>
+            We ran a separate solution discovery in Q4 2024 to address the risk,
+            exploring configurable default landing behavior for future
+            iterations.
+          </p>
+
+          <div class="case-thumb hero-thumb">
+            <img
+              src="images/case-studies/pro-home/pro-home-4.png"
+              alt="Pro Home Experience"
+            />
+          </div>
+
+          <hr
+            style="border: none; border-top: 1px solid #dcdfe4; margin: 20px 0"
+          />
+
+          <h3>Design principles</h3>
+          <p>Four principles guided every decision throughout the project.</p>
+
+          <div class="principle-list">
+            <div class="principle-item">
+              <b>Streamlined navigation</b>
+              <p>
+                A vertical nav bar — collapsible — that could accommodate
+                DeepL's growing portfolio without restructuring every time a new
+                product launched.
+              </p>
+            </div>
+            <div class="principle-item">
+              <b>Role-differentiated shortcut</b>
+              <p>
+                The home Shortcuts section adapts to the user's role. Admins see
+                team management. End users see translation tools and recently
+                saved work.
+              </p>
+            </div>
+            <div class="principle-item">
+              <b>Minimal marketing intervention</b>
+              <p>
+                After login, users should be working — not marketed to.
+                Disruptive dialogs and promotional content were removed from the
+                logged-in experience.
+              </p>
+            </div>
+            <div class="principle-item">
+              <b>Premium B2B signal</b>
+              <p>
+                Logo customization — companies display their own brand mark in
+                the navigation — directly addressed the "am I logged in
+                securely?" concern that enterprise users kept raising.
+              </p>
+            </div>
+          </div>
+
+          <hr
+            style="border: none; border-top: 1px solid #dcdfe4; margin: 20px 0"
+          />
+
+          <h3>What we descoped</h3>
+          <p>
+            API users were explicitly excluded from Home 1.0. Their primary job
+            on day one is retrieving an API key — not using the DeepL product
+            interface. Including them would have added complexity without
+            meaningful value for that segment.
+          </p>
+        </section>
+
+        <!-- ── SOLUTION ── -->
+        <section id="solution" class="case-section">
+          <p class="eyebrow">Solution</p>
+          <h2>A workspace that knows who you are.</h2>
+
+          <p>
+            The new logged-in experience introduces a vertical navigation bar
+            and a role-aware home dashboard — the first time DeepL had either
+            for Pro users.
+          </p>
+
+          <div class="feature-list">
+            <div class="feature-item">
+              <h3>1. Vertical navigation bar</h3>
+              <p>
+                Persistent and collapsible. Products, features, and account
+                management accessible from one place — without leaving the
+                current page or hunting through a horizontal menu.
+              </p>
+              <div class="case-thumb">
+                <img
+                  src="images/case-studies/pro-home/pro-home-5.png"
+                  alt="Pro Home Experience"
+                />
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <h3>2. Role-differentiated home page</h3>
+              <p>
+                Admins see team management, user seat overview, and account
+                settings. End users see translation shortcuts, recently saved
+                translations, and Glossary access. One home page — two
+                meaningfully different experiences.
+              </p>
+              <div class="case-thumb">
+                <img
+                  src="images/case-studies/pro-home/pro-home-6.png"
+                  alt="Pro Home Experience"
+                />
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <h3>3. Custom logo branding</h3>
+              <p>
+                Enterprise customers with 50+ licenses add their company logo to
+                the navigation bar — a branded DeepL workspace for their
+                employees. The 40×40px square format works in both expanded and
+                collapsed nav states, and mirrors the favicon format most
+                companies already use. One of the most-requested enterprise
+                features. Directly addressed the logged-in trust concern.
+              </p>
+              <div class="case-thumb">
+                <img
+                  src="images/case-studies/pro-home/pro-home-7.png"
+                  alt="Pro Home Experience"
+                />
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <h3>4. Cleaner workspace</h3>
+              <p>
+                Marketing dialogs and promotional content that interrupted the
+                logged-in workflow were removed. The workspace below the fold on
+                every page was decluttered.
+              </p>
+              <div class="case-thumb">
+                <img
+                  src="images/case-studies/pro-home/pro-home-8.png"
+                  alt="Pro Home Experience"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ── IMPACT ── -->
+        <section id="outcome" class="case-section">
+          <p class="eyebrow">Outcome</p>
+          <h2>83% preferred it. Then other teams built on top of it.</h2>
+
+          <p>
+            The experience launched in beta to 500+ enterprise users before full
+            rollout in February 2025.
+          </p>
+
+          <div class="impact-grid-2x2">
+            <div class="impact-item">
+              <h3>83% — Beta preference rate</h3>
+              <p>
+                Real enterprise customers — not internal stakeholders —
+                preferred the new experience over the old
+              </p>
+            </div>
+            <div class="impact-item">
+              <h3>180+ companies activated custom branding</h3>
+              <p>
+                From day one of launch, validating how long this had been a
+                latent, unmet need
+              </p>
+            </div>
+            <div class="impact-item">
+              <h3>New features built on the system</h3>
+              <p>
+                Admin navigation customization and an in-app announcement system
+                — both built on top without redesigning the foundation
+              </p>
+            </div>
+            <div class="impact-item">
+              <h3>Navigation now personalizable</h3>
+              <p>
+                The system evolved to support granular persona-based
+                customization — something that would have required a full
+                redesign without the scalable foundation
+              </p>
+            </div>
+          </div>
+
+          <div class="case-thumb hero-thumb">
+            <img
+              src="images/case-studies/pro-home/pro-home-9.png"
+              alt="Pro Home Experience"
+            />
+          </div>
+          <div class="case-thumb hero-thumb">
+            <img
+              src="images/case-studies/pro-home/pro-home-10.png"
+              alt="Pro Home Experience"
+            />
+          </div>
+
+          <hr
+            style="border: none; border-top: 1px solid #dcdfe4; margin: 20px 0"
+          />
+
+          <h3>What I'd do differently</h3>
+
+          <div class="reflection-grid">
+            <div class="reflection-item">
+              <b>Configurable default landing</b>
+              <p>
+                The extra click to reach the translator remains a friction point
+                for habitual users. Letting users choose their default landing
+                page — Home or Translator — was identified as the clearest next
+                step but wasn't in scope for 1.0.
+              </p>
+            </div>
+            <div class="reflection-item">
+              <b>UI consistency across products</b>
+              <p>
+                Because Home was built on top of the existing product,
+                inconsistencies in margin, padding, and corner radius appeared
+                at the edges. A known constraint — but one that needs active
+                work to resolve as more products join the logged-in experience.
+              </p>
+            </div>
+          </div>
+
+          <hr
+            style="border: none; border-top: 1px solid #dcdfe4; margin: 20px 0"
+          />
+
+          <h3>Related work</h3>
+          <p>
+            This case study and the self-serve journey cover both sides of the
+            same B2B user lifecycle at DeepL.
+          </p>
+          <ul>
+            <li>
+              <b>Self-serve journey</b> — pricing page revamp, add-on flows, and
+              API repackaging. Converting and qualifying B2B buyers before they
+              log in.
+            </li>
+            <li>
+              <b>Home experience</b> — this case study. What happens after they
+              do.
+            </li>
+          </ul>
+
+          <h3>Further Reading</h3>
+
+          <p>
+            DeepL also published a behind-the-scenes article about the redesign
+            process together with our Engineering Manager:
+            <a
+              href="https://www.deepl.com/en/blog/new-pro-experience"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-link"
+            >
+              Designing a new Pro experience at DeepL </a
+            >.
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <p>Designed + Coded by Hyeonji</p>
+
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/hyeonji-kim/" target="_blank">
+          LinkedIn
+        </a>
+
+        <a href="mailto:iam.hyeonjikim@gmail.com">Email</a>
+
+        <a href="https://github.com/kim-hyeonji" target="_blank"> GitHub </a>
+      </div>
+    </footer>
+  </body>
+</html>
